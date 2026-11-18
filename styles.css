@@ -91,7 +91,9 @@ a { color: var(--maroon); }
 
 /* Data files */
 .datasets { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
-.ds { background: var(--white); border: 1px solid var(--line); border-top: 5px solid var(--c); padding: 18px 20px; display: grid; gap: 10px; min-width: 0; align-content: start; }
+.ds { background: var(--white); border: 1px solid var(--line); border-top: 5px solid var(--c); padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.ds > * { margin: 0; }
+.ds-actions { margin-top: auto; }
 .ds-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
 .ds-head h2 { font-size: 1.1rem; color: var(--ink); }
 .ds-n { font-family: var(--font-display); font-size: 1.6rem; font-weight: 900; color: var(--maroon); font-variant-numeric: tabular-nums; }
@@ -126,7 +128,7 @@ a { color: var(--maroon); }
 /* Overview dot plot */
 .ov { display: grid; gap: 2px; }
 .ov-axis, .ov-row { display: grid; grid-template-columns: minmax(0, 16rem) minmax(0, 1fr) 7.5rem; gap: 16px; align-items: center; }
-.ov-axis { font-size: 0.78rem; color: var(--muted); padding-bottom: 4px; }
+.ov-axis { font-size: 0.78rem; color: var(--muted); padding: 0 8px 4px; border-left: 3px solid transparent; }
 .ov-scale { position: relative; height: 16px; }
 .ov-scale span { position: absolute; transform: translateX(-50%); font-variant-numeric: tabular-nums; }
 .ov-scale span:first-child { transform: none; } .ov-scale span:last-child { transform: translateX(-100%); }
@@ -142,7 +144,7 @@ a { color: var(--maroon); }
 .ov-ref { position: absolute; top: 1px; bottom: 1px; width: 3px; background: var(--c3); transform: translateX(-50%); }
 .ov-vals { font-size: 0.85rem; font-variant-numeric: tabular-nums; color: var(--muted); text-align: right; white-space: nowrap; }
 .ov-vals .c1, .ov-vals .c2 { font-weight: 700; }
-.ov-sep { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; color: var(--muted); padding: 16px 8px 4px; border-top: 1px solid var(--line); margin-top: 8px; }
+.ov-sep { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; color: var(--muted); padding: 16px 8px 4px 11px; border-top: 1px solid var(--line); margin-top: 8px; }
 .ov-open .ov-track::before { display: none; }
 .ov-open-text { font-size: 0.85rem; }
 
@@ -222,6 +224,9 @@ body.slides .bar-row { font-size: 0.95rem; }
   .ov-axis, .ov-row { grid-template-columns: minmax(0, 1fr) 6.5rem; }
   .ov-axis > :first-child { display: none; }
   .ov-row .ov-q { grid-column: 1 / -1; }
+  .ov-open { row-gap: 4px; }
+  .ov-open .ov-open-text, .ov-open .ov-vals { grid-column: 1 / -1; text-align: left; }
+  .ov-open .ov-vals { font-size: 0.78rem; }
   .q { padding: 18px; }
   .q-head { flex-direction: column; gap: 8px; }
   .hero-inner { padding-block: 36px 40px; }
