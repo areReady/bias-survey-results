@@ -105,7 +105,7 @@ a { color: var(--maroon); }
 .drop { position: relative; display: inline-flex; align-items: center; }
 .drop input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; }
 .ds.over { background: #fdf6e3; }
-.ds-ref { border-top-color: var(--c3); }
+.ds-ref { --c: var(--c3); }
 .ds-ref p { font-size: 0.92rem; }
 
 /* Summary: gray boxes with a gold top bar and a big maroon number, like the university's stat callouts */
