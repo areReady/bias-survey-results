@@ -217,7 +217,7 @@ body.slides .bar-row { font-size: 0.95rem; }
 
 /* Footer band */
 .site-footer .band-inner { padding-block: 36px 40px; display: grid; gap: 10px; font-size: 0.88rem; max-width: 1160px; }
-.site-footer p { max-width: 90ch; }
+.site-footer p { max-width: none; }
 .site-footer b { color: var(--gold); }
 
 @media (max-width: 640px) {
