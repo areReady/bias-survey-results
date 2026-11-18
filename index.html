@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bias Survey Results</title>
+  <meta name="description" content="Per-question comparison of the class's Accurate and Fair survey answers against real-world data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div>
+        <p class="eyebrow">Responsible AI · Class survey</p>
+        <h1>Bias Survey Results</h1>
+        <p class="lede">The same 17 questions, asked two ways: what's <strong class="c1">most accurate</strong> and what's <strong class="c2">fairest</strong>, compared with what <strong class="c3">real-world data</strong> shows.</p>
+      </div>
+      <div class="top-actions">
+        <button class="btn" id="slide-toggle" type="button" aria-pressed="false">Present one question at a time</button>
+      </div>
+    </header>
+
+    <section class="datasets" id="datasets" aria-label="Data files"></section>
+
+    <section class="summary" id="summary" aria-label="Summary"></section>
+
+    <section class="panel" id="overview-panel">
+      <div class="panel-head">
+        <div>
+          <h2>How often the class picked the real-world answer</h2>
+          <p class="hint">Share of responses that chose the answer the data supports. Six questions have no single real-world answer and are listed at the bottom. Select a row to jump to that question.</p>
+        </div>
+        <div class="legend" aria-hidden="true">
+          <span><i class="dot d1"></i>Accurate</span>
+          <span><i class="dot d2"></i>Fair</span>
+        </div>
+      </div>
+      <div id="overview"></div>
+    </section>
+
+    <section id="questions" aria-label="Questions"></section>
+
+    <nav class="slide-nav" id="slide-nav" hidden aria-label="Question navigation">
+      <button class="btn" id="prev" type="button">← Previous</button>
+      <span id="slide-pos"></span>
+      <button class="btn" id="next" type="button">Next →</button>
+      <button class="btn" id="slide-exit" type="button">Show all questions</button>
+    </nav>
+
+    <footer>
+      <p>Real-world figures come from <em>Bias Survey: Real-World Data Reference</em> (Nov 16, 2026). All figures are US unless noted. Data quality: <b>Strong</b> = direct, recent, large-sample data; <b>Moderate</b> = good data plus some stated assumptions; <b>Weak</b> = no direct measure, only related evidence.</p>
+      <p>Uploaded files stay in your browser and aren't sent anywhere.</p>
+    </footer>
+  </div>
+
+  <script src="reference.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
