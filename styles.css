@@ -149,7 +149,10 @@ p { margin: 0; }
 .ref-note { color: var(--muted); font-size: 0.85rem; }
 .ref details { font-size: 0.82rem; color: var(--muted); }
 .ref summary { cursor: pointer; }
-.ref ul { margin: 6px 0 0; padding-left: 18px; }
+.ref ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+.ref a { color: var(--c1); text-underline-offset: 2px; overflow-wrap: anywhere; }
+.ref a:hover { text-decoration-thickness: 2px; }
+.ref a:focus-visible { outline: 2px solid var(--c1); outline-offset: 2px; border-radius: 2px; }
 .shift { font-size: 0.85rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; }
 .shift b { color: var(--fg); }
 

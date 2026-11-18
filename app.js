@@ -234,6 +234,14 @@
     return `<p class="shift">From Accurate to Fair, “${esc(labelOf(pick))}” went from <b class="c1">${pct(va)}</b> to <b class="c2">${pct(vb)}</b> (${dir}).</p>`;
   }
 
+  function sourceItem(s) {
+    if (typeof s === "string") return `<li>${esc(s)}</li>`;
+    const safe = /^https?:\/\//i.test(s.url || "");
+    return safe
+      ? `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`
+      : `<li>${esc(s.title)}</li>`;
+  }
+
   function renderQuestions() {
     const el = document.getElementById("questions");
     let lastGroup = null, html = "";
@@ -261,7 +269,7 @@
             <p class="ref-answer">${esc(q.summary)}</p>
             <p class="ref-est">${esc(q.estimate)}</p>
             ${q.note ? `<p class="ref-note">${esc(q.note)}</p>` : ""}
-            <details><summary>Sources</summary><ul>${q.sources.map((s) => `<li>${esc(s)}</li>`).join("")}</ul></details>
+            <details><summary>Sources (${q.sources.length})</summary><ul>${q.sources.map(sourceItem).join("")}</ul></details>
           </aside>
         </div>
         ${shiftLine(q)}
