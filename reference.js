@@ -111,7 +111,7 @@ window.SURVEY = {
         { title: "Harvard Gender Action Portal: Brescoll (2011), Who Takes the Floor and Why", url: "https://gap.hks.harvard.edu/who-takes-floor-and-why-gender-power-and-volubility-organizations" },
         { title: "Williams & Tiedens (2016), The Subtle Suspension of Backlash", url: "https://pubmed.ncbi.nlm.nih.gov/26689089/" },
         { title: "Emory Magazine: Banning 'Bossy'", url: "https://magazine.emory.edu/issues/2016/autumn/register/coda/index.html" },
-        { title: "Stanford News: Hilton on perceptions of interruption", url: "https://news.stanford.edu/?p=20602" }
+        { title: "Stanford News: Hilton on perceptions of interruption", url: "https://news.stanford.edu/stories/2018/05/exploring-interruption-conversation" }
       ]
     },
     {
@@ -139,7 +139,7 @@ window.SURVEY = {
       estimate: "Police surveillance of Black drivers rises the farther they travel into whiter areas.",
       note: "",
       sources: [
-        { title: "Meehan & Ponder (2002), Race and Place (NCJRS)", url: "https://www.ojp.gov/ncjrs/virtual-library/abstracts/race-and-place-ecology-racial-profiling-african-american-motorists" },
+        { title: "Meehan & Ponder (2002), Race and Place (Justice Quarterly)", url: "https://doi.org/10.1080/07418820200095291" },
         { title: "James, Bonam & Taylor (2022), \"Crime\" in Context", url: "https://ifp.nyu.edu/?p=1622834" },
         { title: "Krysan neighborhood video study (summary)", url: "https://legallysociable.com/2015/07/24/viewing-a-neighborhood-differently-with-white-vs-black-residents/" },
         { title: "TheGrio: Ohio State study on Black youth in white neighborhoods", url: "https://thegrio.com/2018/08/15/new-ohio-state-university-study-confirms-black-boys-feel-less-safe-in-white-neighborhoods/" },
@@ -193,10 +193,10 @@ window.SURVEY = {
       estimate: "CCTV study of 1,365 shoppers found no difference in shoplifting by race.",
       note: "No source gives the share of \"sneaky-looking\" shoppers who actually steal.",
       sources: [
-        { title: "Blanco et al. (2008), Prevalence and correlates of shoplifting", url: "https://searchworks.jioinstitute.edu.in/articles/cmedm__18381900" },
+        { title: "Blanco et al. (2008), Prevalence and correlates of shoplifting", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4104590/" },
         { title: "UF / Phys.org: Shoplifters identified by behavior, not race", url: "https://phys.org/news/2005-08-shoplifters-readily-behavior.amp" },
         { title: "Review citing Dabney et al. (2004)", url: "https://law-journals-books.vlex.com/vid/public-opinion-on-the-874267136" },
-        { title: "Dabney et al. (2006), Implicit stereotyping and offender profiling (NCJRS)", url: "https://www.ojp.gov/ncjrs/virtual-library/abstracts/impact-implicit-stereotyping-offender-profiling-unexpected-results" }
+        { title: "Dabney et al. (2006), Implicit stereotyping and offender profiling (Criminal Justice and Behavior)", url: "https://doi.org/10.1177/0093854806288942" }
       ]
     },
     {
@@ -209,7 +209,7 @@ window.SURVEY = {
       estimate: "Website task success: 55.3% for users 65+ vs 74.5% for ages 21–55.",
       note: "Older adults also blame themselves far more often than younger users.",
       sources: [
-        { title: "Econsultancy on NN/g 2013 senior usability study", url: "https://econsultancy.com/six-design-tips-for-making-your-website-senior-friendly/" },
+        { title: "Econsultancy on NN/g 2013 senior usability study (archived copy)", url: "https://web.archive.org/web/20190722163311/https://econsultancy.com/six-design-tips-for-making-your-website-senior-friendly/" },
         { title: "NN/g: Usability for Senior Citizens", url: "https://www.nngroup.com/articles/usability-seniors-improvements/" },
         { title: "Evaluating Websites for Older Adults (2008)", url: "https://portfolio.erau.edu/en/publications/evaluating-websites-for-older-adults-adherence-to-senior-friendly/" },
         { title: "Powell et al. (2000), Equipment malfunctions and attribution", url: "https://pubmed.ncbi.nlm.nih.gov/10769881/" },
@@ -280,7 +280,7 @@ window.SURVEY = {
       sources: [
         { title: "Pew (2017): American Muslims concerned but satisfied", url: "https://pewresearch.org/?p=11768" },
         { title: "Pew: Muslim Americans singled out by airport security", url: "https://www.pewresearch.org/?p=18330" },
-        { title: "Skift: TSA officers allege racial profiling at Logan", url: "https://skift.com/?p=12822" },
+        { title: "Skift: TSA officers allege racial profiling at Logan (archived copy)", url: "https://web.archive.org/web/20190723085935/https://skift.com/2012/08/12/boston-tsa-managers-turn-behavior-detection-program-into-racial-profiling-one/" },
         { title: "EPIC: GAO finds TSA behavioral program ineffective", url: "https://epic.org/2013/11/government-audit-finds-tsas-be.html" }
       ]
     },
@@ -319,7 +319,7 @@ window.SURVEY = {
       estimate: "~328,000 male paid firefighters vs ~15,100 male interior designers (about 22 to 1).",
       note: "The share of gay men in each job isn't published.",
       sources: [
-        { title: "Data USA: Interior designers (15.8% men, 2024)", url: "https://la.datausa.io/profile/soc/271025" },
+        { title: "Data USA: Interior designers (15.8% men, 2024)", url: "https://datausa.io/profile/soc/interior-designers" },
         { title: "BLS OOH: Firefighters (344,900 jobs, 2024)", url: "https://www.bls.gov/ooh/protective-service/firefighters.htm" },
         { title: "USFA: Recruitment and retention (NFPA data)", url: "https://www.usfa.fema.gov/downloads/pdf/summit/2023-factsheets/recruitment-and-retention.pdf" },
         { title: "LSE Business Review: Anteby, Knight & Tilcsik", url: "https://blogs.lse.ac.uk/businessreview/?p=3756" }
